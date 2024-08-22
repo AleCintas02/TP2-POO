@@ -33,7 +33,7 @@ public class Persona {
      * @param p_dni Número de DNI de la persona.
      */
     private void setDNI(int p_dni) {
-        nroDni = p_dni;
+        this.nroDni = p_dni;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Persona {
      * @param p_nombre Nombre de la persona.
      */
     private void setNombre(String p_nombre) {
-        nombre = p_nombre;
+        this.nombre = p_nombre;
     }
 
     /**
@@ -51,7 +51,7 @@ public class Persona {
      * @param p_apellido Apellido de la persona.
      */
     private void setApellido(String p_apellido) {
-        apellido = p_apellido;
+        this.apellido = p_apellido;
     }
 
     /**
@@ -60,7 +60,7 @@ public class Persona {
      * @param p_anio Año de nacimiento de la persona.
      */
     private void setAnioNacimiento(int p_anio) {
-        anioNacimiento = p_anio;
+        this.anioNacimiento = p_anio;
     }
 
     // GETTERS
@@ -71,8 +71,8 @@ public class Persona {
      * @param p_dni Número de DNI de la persona.
      * @return Número de DNI de la persona.
      */
-    public int getDNI(int p_dni) {
-        return p_dni;
+    public int getDNI() {
+        return this.nroDni;
     }
 
     /**
@@ -81,8 +81,8 @@ public class Persona {
      * @param p_nombre Nombre de la persona.
      * @return Nombre de la persona.
      */
-    public String getNombre(String p_nombre) {
-        return p_nombre;
+    public String getNombre() {
+        return this.nombre;
     }
 
     /**
@@ -91,8 +91,8 @@ public class Persona {
      * @param p_apellido Apellido de la persona.
      * @return Apellido de la persona.
      */
-    public String getApellido(String p_apellido) {
-        return p_apellido;
+    public String getApellido() {
+        return this.apellido;
     }
 
     /**
@@ -101,8 +101,8 @@ public class Persona {
      * @param p_anio Año de nacimiento de la persona.
      * @return Año de nacimiento de la persona.
      */
-    public int getAnioNacimiento(int p_anio) {
-        return p_anio;
+    public int getAnioNacimiento() {
+        return this.anioNacimiento;
     }
 
     // MÉTODOS
