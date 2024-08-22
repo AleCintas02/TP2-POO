@@ -123,7 +123,7 @@ public class Empleado {
      * @return el nombre y el apellido del empleado
      */
     public String nomYApe() {
-        return getNombre() + " " + getApellido();
+        return this.getNombre() + " " + this.getApellido();
     }
 
     /**
@@ -132,7 +132,7 @@ public class Empleado {
      * @return el apellido y el nombre del empleado
      */
     public String apeYNom() {
-        return getApellido() + ", " + getNombre();
+        return this.getApellido() + ", " + this.getNombre();
     }
 
     /**
@@ -179,7 +179,7 @@ public class Empleado {
      * @return el sueldo neto del empleado
      */
     public double sueldoNeto() {
-        return (this.getSueldoBasico() + adicional()) - descuento();
+        return (this.getSueldoBasico() + this.adicional()) - this.descuento();
     }
 
     /**
