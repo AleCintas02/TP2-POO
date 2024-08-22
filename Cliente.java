@@ -19,10 +19,10 @@ public class Cliente {
      * @param p_importe el saldo inicial del cliente
      */
     public Cliente(int p_dni, String p_nombre, String p_apellido, double p_importe) {
-        setNroDni(p_dni);
-        setNombre(p_nombre);
-        setApellido(p_apellido);
-        setSaldo(p_importe);
+        this.setNroDni(p_dni);
+        this.setNombre(p_nombre);
+        this.setApellido(p_apellido);
+        this.setSaldo(p_importe);
     }
     
     /**
