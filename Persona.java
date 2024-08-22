@@ -19,10 +19,10 @@ public class Persona {
      * @param p_anio         Año de nacimiento de la persona.
      */
     public Persona(int p_dni, String p_nombre, String p_apellido, int p_anio) {
-        this.nroDni = p_dni;
-        this.nombre = p_nombre;
-        this.apellido = p_apellido;
-        this.anioNacimiento = p_anio;
+        this.setDNI(p_dni);
+        this.setNombre(p_nombre);
+        this.setApellido(p_apellido);
+        this.setAnioNacimiento(p_anio);
     }
 
     // SETTERS
@@ -115,7 +115,7 @@ public class Persona {
     public int edad() {
         Calendar fechaHoy = new GregorianCalendar();
         int anioHoy = fechaHoy.get(Calendar.YEAR);
-        int edad = anioHoy - anioNacimiento;
+        int edad = anioHoy - this.getAnioNacimiento();
         return edad;
     }
 
@@ -125,13 +125,13 @@ public class Persona {
      * @return Nombre y apellido de la persona.
      */
     public String nomYApe() {
-        return nombre + " " + apellido;
+        return this.getNombre() + " " + this.getApellido();
     }
 
     /**
      * Muestra la información de la persona, incluyendo nombre, apellido, DNI y edad.
      */
     public void mostrar() {
-        System.out.println("nombre y apellido: " + nomYApe() + " DNI: " + nroDni + " Edad: " + edad());
+        System.out.println("nombre y apellido: " + this.nomYApe() + " DNI: " + this.getDNI() + " Edad: " + this.edad());
     }
 }
