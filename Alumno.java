@@ -140,7 +140,7 @@ public class Alumno {
      * @return true si el promedio de las notas es mayor que 7.0 y ambas notas son mayores o iguales a 6.0, false en caso contrario.
      */
     private boolean aprueba() {
-        return promedio() > 7.0 && this.getNota1() >= 6.0 && this.getNota2() >= 6.0;
+        return this.promedio() > 7.0 && this.getNota1() >= 6.0 && this.getNota2() >= 6.0;
     }
    
     /**
@@ -149,7 +149,7 @@ public class Alumno {
      * @return "APROBADO" si el alumno aprueba, "DESAPROBADO" en caso contrario.
      */
     private String leyendaAprueba() {
-        return aprueba() ? "APROBADO" : "DESAPROBADO";
+        return this.aprueba() ? "APROBADO" : "DESAPROBADO";
     }
     
     /**
@@ -157,7 +157,7 @@ public class Alumno {
      */
     public void mostrar() {
         System.out.println("Nombre y Apellido: " + this.nomYApe());
-        System.out.println("LU: " + lu + " Notas: "+ getNota1() + " " + this.getNota2());
-        System.out.println("Promedio: " + promedio() + " - " + this.leyendaAprueba());
+        System.out.println("LU: " + lu + " Notas: "+ this.getNota1() + " " + this.getNota2());
+        System.out.println("Promedio: " + this.promedio() + " - " + this.leyendaAprueba());
     }
 }
