@@ -14,8 +14,8 @@ public class Punto {
      * Constructor por defecto que inicializa el punto en el origen (X=0, Y=0).
      */
     public Punto() {
-        setX(0.0);
-        setY(0.0);
+        this.setX(0.0);
+        this.setY(0.0);
     }
     
     /**
@@ -25,8 +25,8 @@ public class Punto {
      * @param p_y La coordenada Y del punto.
      */
     public Punto(double p_x, double p_y) {
-        setX(p_x);
-        setY(p_y);
+        this.setX(p_x);
+        this.setY(p_y);
     }
     
     /**
@@ -72,8 +72,8 @@ public class Punto {
      * @param p_dy La cantidad a sumar a la coordenada Y.
      */
     public void desplazar(double p_dx, double p_dy) {
-        this.setX(getX() + p_dx);
-        this.setY(getY() + p_dy);
+        this.setX(this.getX() + p_dx);
+        this.setY(this.getY() + p_dy);
     }
     
     /**
