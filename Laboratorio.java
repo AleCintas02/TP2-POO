@@ -19,11 +19,11 @@ public class Laboratorio {
      * @param p_diaEnt      Día de entrega del laboratorio.
      */
     public Laboratorio(String p_nombre, String p_domicilio, String p_telefono, int p_compraMin, int p_diaEnt) {
-        setNombre(p_nombre);
-        setDomicilio(p_domicilio);
-        setTelefono(p_telefono);
-        setCompraMin(p_compraMin);
-        setDiaEntrega(p_diaEnt);
+        this.setNombre(p_nombre);
+        this.setDomicilio(p_domicilio);
+        this.setTelefono(p_telefono);
+        this.setCompraMin(p_compraMin);
+        this.setDiaEntrega(p_diaEnt);
     }
 
     /**
@@ -34,11 +34,11 @@ public class Laboratorio {
      * @param p_telefono    Teléfono del laboratorio.
      */
     public Laboratorio(String p_nombre, String p_domicilio, String p_telefono) {
-        setNombre(p_nombre);
-        setDomicilio(p_domicilio);
-        setTelefono(p_telefono);
-        setCompraMin(0);
-        setDiaEntrega(0);
+        this.setNombre(p_nombre);
+        this.setDomicilio(p_domicilio);
+        this.setTelefono(p_telefono);
+        this.setCompraMin(0);
+        this.setDiaEntrega(0);
     }
 
     /**
@@ -137,7 +137,7 @@ public class Laboratorio {
      * @param p_compraMin   Nueva compra mínima.
      */
     public void nuevaCompraMinima(int p_compraMin) {
-        setCompraMin(p_compraMin);
+        this.setCompraMin(p_compraMin);
     }
 
     /**
@@ -146,7 +146,7 @@ public class Laboratorio {
      * @param p_diaEnt      Nuevo día de entrega.
      */
     public void nuevoDiaEntrega(int p_diaEnt) {
-        setDiaEntrega(p_diaEnt);
+        this.setDiaEntrega(p_diaEnt);
     }
 
     /**
@@ -155,8 +155,8 @@ public class Laboratorio {
      * @return Información del laboratorio.
      */
     public String mostrar() {
-        String info = "nombre: " + nombre;
-        info += "\ndomicilio: " + domicilio + " telefono: " + telefono;
+        String info = "nombre: " + this.getNombre();
+        info += "\ndomicilio: " + this.getDomicilio() + " telefono: " + this.getTelefono();
         return info;
     }
 }
