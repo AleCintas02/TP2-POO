@@ -134,7 +134,7 @@ public class Cliente {
      */
     public void mostrar() {
         System.out.println("- Cliente -");
-        System.out.println("Nombre y Apellido: " + this.nomYApe());
+        System.out.println("Nombre y Apellido: " + this.nomYApe() + "(" + this.getNroDni() + ")");
         System.out.println("Saldo: " + this.getSaldo());
     }
 }

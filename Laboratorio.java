@@ -155,8 +155,8 @@ public class Laboratorio {
      * @return Información del laboratorio.
      */
     public String mostrar() {
-        String info = "nombre: " + this.getNombre();
-        info += "\ndomicilio: " + this.getDomicilio() + " telefono: " + this.getTelefono();
+        String info = "Laboratorio: " + this.getNombre();
+        info += "\nDomicilio: " + this.getDomicilio() + " - Teléfono: " + this.getTelefono();
         return info;
     }
 }

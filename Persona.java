@@ -24,8 +24,6 @@ public class Persona {
         this.setApellido(p_apellido);
         this.setAnioNacimiento(p_anio);
     }
-
-    // SETTERS
     
     /**
      * Establece el número de DNI de la persona.
@@ -62,8 +60,6 @@ public class Persona {
     private void setAnioNacimiento(int p_anio) {
         this.anioNacimiento = p_anio;
     }
-
-    // GETTERS
 
     /**
      * Devuelve el número de DNI de la persona.
@@ -105,8 +101,6 @@ public class Persona {
         return this.anioNacimiento;
     }
 
-    // MÉTODOS
-
     /**
      * Calcula y devuelve la edad de la persona basada en el año actual.
      * 
@@ -132,6 +126,6 @@ public class Persona {
      * Muestra la información de la persona, incluyendo nombre, apellido, DNI y edad.
      */
     public void mostrar() {
-        System.out.println("nombre y apellido: " + this.nomYApe() + " DNI: " + this.getDNI() + " Edad: " + this.edad());
+        System.out.println("Nombre y apellido: " + this.nomYApe() + "\nDNI: " + this.getDNI() + "\tEdad: " + this.edad());
     }
 }
